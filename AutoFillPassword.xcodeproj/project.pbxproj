@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0920FEF246C2E5A00124DBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0920FEE246C2E5A00124DBF /* AppDelegate.swift */; };
+		B0920FF1246C2E5A00124DBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0920FF0246C2E5A00124DBF /* SceneDelegate.swift */; };
+		B0920FF3246C2E5A00124DBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0920FF2246C2E5A00124DBF /* ViewController.swift */; };
+		B0920FF6246C2E5A00124DBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0920FF4246C2E5A00124DBF /* Main.storyboard */; };
+		B0920FF8246C2E5D00124DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0920FF7246C2E5D00124DBF /* Assets.xcassets */; };
+		B0920FFB246C2E5D00124DBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0920FF9246C2E5D00124DBF /* LaunchScreen.storyboard */; };
+		B092100A246C2FEB00124DBF /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0921009246C2FEB00124DBF /* AuthenticationServices.framework */; };
+		B092100D246C2FEB00124DBF /* CredentialProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B092100C246C2FEB00124DBF /* CredentialProviderViewController.swift */; };
+		B0921010246C2FEB00124DBF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B092100E246C2FEB00124DBF /* MainInterface.storyboard */; };
+		B0921015246C2FEB00124DBF /* AutoFillExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0921007246C2FEB00124DBF /* AutoFillExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B092101B246C301E00124DBF /* CredentialProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B092101A246C301E00124DBF /* CredentialProviderViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0921013246C2FEB00124DBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0920FE3246C2E5A00124DBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0921006246C2FEB00124DBF;
+			remoteInfo = AutoFillExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0921019246C2FEB00124DBF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B0921015246C2FEB00124DBF /* AutoFillExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B0920FEB246C2E5A00124DBF /* AutoFillPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoFillPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0920FEE246C2E5A00124DBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0920FF0246C2E5A00124DBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B0920FF2246C2E5A00124DBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0920FF5246C2E5A00124DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0920FF7246C2E5D00124DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0920FFA246C2E5D00124DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0920FFC246C2E5D00124DBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0921002246C2FA100124DBF /* AutoFillPassword.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoFillPassword.entitlements; sourceTree = "<group>"; };
+		B0921007246C2FEB00124DBF /* AutoFillExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AutoFillExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0921009246C2FEB00124DBF /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		B092100C246C2FEB00124DBF /* CredentialProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialProviderViewController.swift; sourceTree = "<group>"; };
+		B092100F246C2FEB00124DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B0921011246C2FEB00124DBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0921012246C2FEB00124DBF /* AutoFillExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoFillExtension.entitlements; sourceTree = "<group>"; };
+		B092101A246C301E00124DBF /* CredentialProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialProviderViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0920FE8246C2E5A00124DBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0921004246C2FEB00124DBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B092100A246C2FEB00124DBF /* AuthenticationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0920FE2246C2E5A00124DBF = {
+			isa = PBXGroup;
+			children = (
+				B0920FED246C2E5A00124DBF /* AutoFillPassword */,
+				B092100B246C2FEB00124DBF /* AutoFillExtension */,
+				B0921008246C2FEB00124DBF /* Frameworks */,
+				B0920FEC246C2E5A00124DBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0920FEC246C2E5A00124DBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0920FEB246C2E5A00124DBF /* AutoFillPassword.app */,
+				B0921007246C2FEB00124DBF /* AutoFillExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0920FED246C2E5A00124DBF /* AutoFillPassword */ = {
+			isa = PBXGroup;
+			children = (
+				B0921002246C2FA100124DBF /* AutoFillPassword.entitlements */,
+				B0920FEE246C2E5A00124DBF /* AppDelegate.swift */,
+				B0920FF0246C2E5A00124DBF /* SceneDelegate.swift */,
+				B0920FF2246C2E5A00124DBF /* ViewController.swift */,
+				B0920FF4246C2E5A00124DBF /* Main.storyboard */,
+				B0920FF7246C2E5D00124DBF /* Assets.xcassets */,
+				B0920FF9246C2E5D00124DBF /* LaunchScreen.storyboard */,
+				B0920FFC246C2E5D00124DBF /* Info.plist */,
+				B092101A246C301E00124DBF /* CredentialProviderViewController.swift */,
+			);
+			path = AutoFillPassword;
+			sourceTree = "<group>";
+		};
+		B0921008246C2FEB00124DBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0921009246C2FEB00124DBF /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B092100B246C2FEB00124DBF /* AutoFillExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B092100C246C2FEB00124DBF /* CredentialProviderViewController.swift */,
+				B092100E246C2FEB00124DBF /* MainInterface.storyboard */,
+				B0921011246C2FEB00124DBF /* Info.plist */,
+				B0921012246C2FEB00124DBF /* AutoFillExtension.entitlements */,
+			);
+			path = AutoFillExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0920FEA246C2E5A00124DBF /* AutoFillPassword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0920FFF246C2E5D00124DBF /* Build configuration list for PBXNativeTarget "AutoFillPassword" */;
+			buildPhases = (
+				B0920FE7246C2E5A00124DBF /* Sources */,
+				B0920FE8246C2E5A00124DBF /* Frameworks */,
+				B0920FE9246C2E5A00124DBF /* Resources */,
+				B0921019246C2FEB00124DBF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0921014246C2FEB00124DBF /* PBXTargetDependency */,
+			);
+			name = AutoFillPassword;
+			productName = AutoFillPassword;
+			productReference = B0920FEB246C2E5A00124DBF /* AutoFillPassword.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0921006246C2FEB00124DBF /* AutoFillExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0921016246C2FEB00124DBF /* Build configuration list for PBXNativeTarget "AutoFillExtension" */;
+			buildPhases = (
+				B0921003246C2FEB00124DBF /* Sources */,
+				B0921004246C2FEB00124DBF /* Frameworks */,
+				B0921005246C2FEB00124DBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoFillExtension;
+			productName = AutoFillExtension;
+			productReference = B0921007246C2FEB00124DBF /* AutoFillExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0920FE3246C2E5A00124DBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = KakaoTalk;
+				TargetAttributes = {
+					B0920FEA246C2E5A00124DBF = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B0921006246C2FEB00124DBF = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B0920FE6246C2E5A00124DBF /* Build configuration list for PBXProject "AutoFillPassword" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0920FE2246C2E5A00124DBF;
+			productRefGroup = B0920FEC246C2E5A00124DBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0920FEA246C2E5A00124DBF /* AutoFillPassword */,
+				B0921006246C2FEB00124DBF /* AutoFillExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0920FE9246C2E5A00124DBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0920FFB246C2E5D00124DBF /* LaunchScreen.storyboard in Resources */,
+				B0920FF8246C2E5D00124DBF /* Assets.xcassets in Resources */,
+				B0920FF6246C2E5A00124DBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0921005246C2FEB00124DBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0921010246C2FEB00124DBF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0920FE7246C2E5A00124DBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0920FF3246C2E5A00124DBF /* ViewController.swift in Sources */,
+				B0920FEF246C2E5A00124DBF /* AppDelegate.swift in Sources */,
+				B092101B246C301E00124DBF /* CredentialProviderViewController.swift in Sources */,
+				B0920FF1246C2E5A00124DBF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0921003246C2FEB00124DBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B092100D246C2FEB00124DBF /* CredentialProviderViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0921014246C2FEB00124DBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0921006246C2FEB00124DBF /* AutoFillExtension */;
+			targetProxy = B0921013246C2FEB00124DBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0920FF4246C2E5A00124DBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0920FF5246C2E5A00124DBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0920FF9246C2E5D00124DBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0920FFA246C2E5D00124DBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B092100E246C2FEB00124DBF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B092100F246C2FEB00124DBF /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0920FFD246C2E5D00124DBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0920FFE246C2E5D00124DBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0921000246C2E5D00124DBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoFillPassword/AutoFillPassword.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M79H9K226Y;
+				INFOPLIST_FILE = AutoFillPassword/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.AutoFillPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0921001246C2E5D00124DBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoFillPassword/AutoFillPassword.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M79H9K226Y;
+				INFOPLIST_FILE = AutoFillPassword/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.AutoFillPassword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0921017246C2FEB00124DBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutoFillExtension/AutoFillExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M79H9K226Y;
+				INFOPLIST_FILE = AutoFillExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.AutoFillPassword.AutoFillExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0921018246C2FEB00124DBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutoFillExtension/AutoFillExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M79H9K226Y;
+				INFOPLIST_FILE = AutoFillExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kakao.AutoFillPassword.AutoFillExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0920FE6246C2E5A00124DBF /* Build configuration list for PBXProject "AutoFillPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0920FFD246C2E5D00124DBF /* Debug */,
+				B0920FFE246C2E5D00124DBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0920FFF246C2E5D00124DBF /* Build configuration list for PBXNativeTarget "AutoFillPassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0921000246C2E5D00124DBF /* Debug */,
+				B0921001246C2E5D00124DBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0921016246C2FEB00124DBF /* Build configuration list for PBXNativeTarget "AutoFillExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0921017246C2FEB00124DBF /* Debug */,
+				B0921018246C2FEB00124DBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0920FE3246C2E5A00124DBF /* Project object */;
+}
