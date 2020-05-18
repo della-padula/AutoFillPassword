@@ -52,7 +52,7 @@ class CredentialProviderViewController: ASCredentialProviderViewController {
     }
 
     @IBAction func passwordSelected(_ sender: AnyObject?) {
-        let passwordCredential = ASPasswordCredential(user: "j_appleseed", password: "apple1234")
+        let passwordCredential = ASPasswordCredential(user: "elliott.urssu", password: "")
         self.extensionContext.completeRequest(withSelectedCredential: passwordCredential, completionHandler: nil)
     }
 
