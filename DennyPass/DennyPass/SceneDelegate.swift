@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  PasswordManager
+//  DennyPass
 //
 //  Created by 김태인 on 2020/05/18.
 //  Copyright © 2020 Personal. All rights reserved.
